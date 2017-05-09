@@ -1,0 +1,67 @@
+puts "Welcome to Wynwood, Miami!"
+puts "What do you want to do?"
+puts "Options: look at some art, take a selfie, eat food, grab a drink, learn to code, secret message."
+puts "Please enter full statements."
+option = gets.chomp
+case option
+when "look at some art"
+    puts "Check out Wynwood Walls, or just walk around? Art is everywhere."
+    wyn_answer = gets.chomp
+    if wyn_answer === "Check out Wynwood Walls"
+    	puts "Awesome, Wynwood Walls has some very cool art."
+    elsif wyn_answer === "just walk around"
+    	puts "Cool, walking is great exercise."
+    else
+    	puts "Try again."
+    end
+when "eat food"
+    puts "Great, food truck or restaurant?"
+    food_answer = gets.chomp
+    if food_answer === "food truck"
+    	puts "Wynwood Yard has plenty of great food trucks."
+    elsif food_answer === "restaurant"
+    	puts "Try Coyo Tacos or Wynwood Kitchen & Bar."
+    else
+    	puts "Try again."
+    end
+when "grab a drink"
+    puts "Coffee or alcohol?"
+    drink_answer = gets.chomp
+    if drink_answer === "Coffee"
+        puts "Panther Coffee is a great local spot."
+    elsif drink_answer === "alcohol"
+        puts "Try Gramp's for drinks and live music."
+    else
+        puts "Try again."
+    end
+when "take a selfie"
+    puts "Snap! Click! You look great, Do you have instagram?"
+    insta_answer = gets.chomp
+    if insta_answer === "yes"
+        puts "Cool, add me!"
+    elsif insta_answer === "no"
+        puts "You should make one."
+    else
+        puts "Try again."
+    end
+when "learn to code"
+    puts "Are you sure?"
+    code_answer = gets.chomp
+    if code_answer === "yes"
+    	puts "Great! Check out Wyncode at 549 NW 28th St, Miami, FL 33127."
+    elsif code_answer === "no"
+    	puts "Come on, give it a try!"
+    else
+    	puts "Try again."
+    end
+when "secret message"
+    puts "                                                  
+ _ _ _                   _        _____ ___   ___ 
+| | | |_ _ ___ ___ ___ _| |___   |     |_  | |  _|
+| | | | | |   |  _| . | . | -_|  |   --|_| |_|_  |
+|_____|_  |_|_|___|___|___|___|  |_____|_____|___|
+      |___|                                       "
+else
+    puts "Read the options and try again."
+    puts "Autobot: \"Run program again, please.\""
+end
